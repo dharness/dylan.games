@@ -1,0 +1,14 @@
+{# Hides content to prevent #}
+<link rel="stylesheet" href="/../css/loading.css" type="text/css">
+
+<div class='wrapper'>
+    {% include "./sidebar.njk" %}
+    <div class='work-content'>
+        <div class='work-title'>
+            {% block title %}{% endblock %}
+        </div>
+            {% block content %}{% endblock %}
+    </div>
+</div>
+
+{% include "./header.njk" %}

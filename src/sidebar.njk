@@ -1,0 +1,24 @@
+<div class='sidebar'>
+    <div class='sidebar-header'>
+        <a href="/"> Dylan Harness </a>
+    </div>
+    <div id="work-titles">
+
+        {% for worksBlob in works.years %}
+            <div class='work-section'>
+                {% for year, worksForYear in worksBlob %}
+                    <div class='work-year'>
+                        {{ year }}
+                        <div class='work-year--underline'></div>
+                    </div>
+
+                    {% for work in worksForYear %}
+                        <div class='work-link'>
+                            <a href="{{work.path}}">{{ work.title }}</a>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

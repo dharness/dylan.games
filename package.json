@@ -1,0 +1,25 @@
+{
+  "name": "nailanur.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp-data": "^1.3.1",
+    "gulp-live-server": "0.0.31",
+    "gulp-nunjucks": "^5.0.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "nunjucks-cli": "^1.0.0"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "gulp:w": "gulp watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
