@@ -5,21 +5,13 @@ const data = require('gulp-data');
 var path = require('path');
 
 const fs = require('fs');
-const worksDataPath = './src/works_data.json';
-const htmlPath = './src/**/*.njk';
+const htmlPath = './src/**/*.html';
 const cssPath = './src/**/*.css';
 const assetsPath = './src/assets/**/**';
 
-function getWorksData() {
-    return JSON.parse(fs.readFileSync(worksDataPath, 'utf8'));
-}
 
 function html () {
     return src(htmlPath)
-        .pipe(data(getWorksData))
-        .pipe(nunjucksRender({
-            path: ['./src'] // String or Array
-        }))
         .pipe(dest('docs'));
 };
 

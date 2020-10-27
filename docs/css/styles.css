@@ -2,104 +2,70 @@ body {
     visibility: visible;
 }
 
-.wrapper {
-    display: flex;
+@font-face {
+    font-family: 'Good Unicorn';
+    src: url('../assets/fonts/Good-Unicorn.woff') format('woff'), url('../assets/fonts/Good-Unicorn.ttf') format('truetype');
 }
 
-.work-content {
-    height: 100%;
-    overflow-y: auto;
+@font-face {
+    font-family: 'Lucida Sans Unicode';
+    src: url('../assets/fonts/Lucida-Sans-Unicode.woff') format('woff'), url('../assets/fonts/Lucida-Sans-Unicode.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../assets/fonts/BAHNSCHRIFT.woff') format('woff');
+}
+
+.dh-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    padding: 30px 30px 30px 0px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 300;
-    align-items: center;
-}
-
-.sidebar {
-    height: 100%;
-    overflow-y: auto;
-    width: 230px;
-    padding: 10px;
-}
-
-.sidebar-header {
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 2;
-    font-size: 40px;
-    padding-bottom: 15px;
-}
-
-.work-title {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-.work-link {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    line-height: 1.8;
-    padding-left: 7px;
-}
-
-.work-text {
-    max-width: 700px;
-    line-height: 1.5;
-}
-
-.work-year {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    margin: 7px 0px;
-}
-
-.work-section {
-    padding-bottom: 20px;
-}
-
-.work-year--underline {
-    height: 1px;
-    margin-top: 2px;
+    max-width: 1630px;
     background: black;
+    margin: 20px 90px;
 }
 
-.external-link {
-    color: #0592b0;
-    font-weight: 400;
+.dh-section {
+    width: 100%;
 }
 
-.related-websites h5 {
-    font-size: 15px;
-    font-weight: 400;
+.dh-section--sub-header {
+    font-family: 'Bahnschrift';
+    font-weight: bold;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin-bottom: 10px;
 }
 
-.related-websites a {
-    line-height: 25px;
+.dh-section--sub-header p {
+    margin: auto 0px 0px 0px;
 }
 
-.related-websites {
+.dh-section--sub-header img {
+    margin-bottom: 4px;
+}
+
+.dh-section--body {
+    font-family: 'Lucida Sans Unicode';
+    line-height: 32px;
+    font-size: 20px;
+    padding-right: 100px;
+}
+
+.dh-section--title {
+    font-family: 'Good Unicorn';
+    font-size: 80px;
+}
+
+.dh-section--intro {
+    grid-column: 1 / 9;
+    background: blue;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 700px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.dh-section--mr-left {
+    min-width: 67%;
 }
-
-a:hover {
-    background-color: #d1faff;
-}
-
-* {
-    box-sizing: border-box;
-}
-
