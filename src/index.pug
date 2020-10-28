@@ -8,40 +8,44 @@ head
     title Dylan Harness
 .dh-wrapper
     .mr-grid
-        .mr-desktop-text-layout
-            .mr-title.section-title Mr. Makes-A-Word
+        .mr-desktop-text-layout.aspect-ratio-box
+            .mr-title.section-title
+                svg(viewbox='0 0 800 75')
+                    text(x='0' y=75) Mr. Makes-A-Word
+
             .mr-subtitle.section-subtitle
-                p A game of fun and adventure
-                img(src='assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' alt='')
+                div A game of fun and adventure
+                //- img(src='assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' alt='')
             .mr-description.section-description
                 | Mr. Makes-A-Word is a fun and colorful word game for iOS. In addition to 13 cooky characters to unlock, the game features over 100 levels that increase in difficulty with the player&rsquo;s skill.
         .mr-trailer
-            video(controls='' width='100%')
-                source(src='./assets/videos/portrait_v1.mp4' type='video/mp4')
-                | Sorry, your browser doesn&apos;t support embedded videos.
-        .mr-cards
-            //- img(src='./assets/images/mr/bobmeat.png' alt='')
-        .mr-cereal
+            .mr-trailer-frame
+                video(controls='' width='100%')
+                    source(src='./assets/videos/portrait_v1.mp4' type='video/mp4')
+                    | Sorry, your browser doesn&apos;t support embedded videos.
+        .mr-cards.aspect-ratio-box
+            img(src='./assets/images/mr/bobmeat.png' alt='')
+        .mr-cereal.aspect-ratio-box
             //- img(src='assets/images/mr/cereal_box.png' alt='')
-        .mr-gift
+        .mr-gift.aspect-ratio-box
             //- img(src='assets/images/mr/gift.png' alt='')
-        .mr-milk-bag
+        .mr-milk-bag.aspect-ratio-box
             //- img(src='assets/images/mr/milkbag.png' alt='')
-        .mr-tiles-gif
-            img(src='assets/images/mr/tiles-gif.png' alt='')
-        .mr-powerups-1
-            img(src='assets/images/mr/coffee.png' alt='')
-            img(src='assets/images/mr/egg.png' alt='')
-            img(src='assets/images/mr/banana.png' alt='')
-        .mr-powerups-2
-            img(src='assets/images/mr/dictionary.png' alt='')
-            img(src='assets/images/mr/backpack.png' alt='')
-            img(src='assets/images/mr/coins.png' alt='')
-        .mr-sticker-lg
-            img(src='assets/images/mr/mark_spaghetti.png' alt='')
-        .mr-sticker-sm-1
-            img(src='assets/images/mr/7friends_brian.png' alt='')
-        .mr-sticker-sm-2
-            img(src='assets/images/mr/7friends_piggy-bank.png' alt='')
-        .mr-lemoon
-            img(src='assets/images/mr/CloudLemoonBadgeController.png' alt='')
+        .mr-tiles-gif.aspect-ratio-box
+            //- img(src='assets/images/mr/tiles-gif.png' alt='')
+        .mr-powerups-1.aspect-ratio-box
+            //- img(src='assets/images/mr/coffee.png' alt='')
+            //- img(src='assets/images/mr/egg.png' alt='')
+            //- img(src='assets/images/mr/banana.png' alt='')
+        .mr-powerups-2.aspect-ratio-box
+            //- img(src='assets/images/mr/dictionary.png' alt='')
+            //- img(src='assets/images/mr/backpack.png' alt='')
+            //- img(src='assets/images/mr/coins.png' alt='')
+        .mr-sticker-lg.aspect-ratio-box
+            //- img(src='assets/images/mr/mark_spaghetti.png' alt='')
+        .mr-sticker-sm-1.aspect-ratio-box
+            //- img(src='assets/images/mr/7friends_brian.png' alt='')
+        .mr-sticker-sm-2.aspect-ratio-box
+            //- img(src='assets/images/mr/7friends_piggy-bank.png' alt='')
+        .mr-lemoon.aspect-ratio-box
+            //- img(src='assets/images/mr/CloudLemoonBadgeController.png' alt='')

@@ -33,6 +33,7 @@ body {
 
 .section-title {
     font-family: 'Good Unicorn';
+    display: flex;
 }
 
 .section-subtitle {

@@ -1,3 +1,15 @@
+:root {
+    --mr-border-radius: 7px;
+}
+
+text {
+    font-family: 'Good Unicorn';
+}
+
+svg {
+    width: 100%;
+}
+
 .mr-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);    
@@ -7,6 +19,8 @@
 }
 
 .mr-desktop-text-layout {
+    padding-top: calc(350/1073 * 100%);
+
     background: orchid;
     grid-column: 1/9;
     grid-row: 1/5;
@@ -15,24 +29,59 @@
 }
 
 .mr-title {
-    grid-column: 4/7;
+    font-size: 116px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
 }
 
 .mr-subtitle {
     display: flex;
     justify-content: space-between;
+    font-size: 2vw;
+    height: 10%;
+    background: red;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    height: 15%;
 }
+
+.mr-description {
+    background: yellow;
+    font-size: 1.3vw;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 100%;
+    height: 45%;
+}
+
 
 .mr-trailer {
     grid-column: 9/13;
     grid-row: 1/9;
     background: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mr-trailer-frame {
+    display: flex;
+}
+
+.aspect-ratio-box {
+    overflow: hidden;
+    height: 0;
+    position: relative;
 }
 
 .mr-cards {
-    overflow: hidden;
-    height: 0;
-    padding-top: 56.25%;
+    padding-top: calc(541/386 * 100%);
 
     background: violet;
     grid-column: 1/4;
@@ -40,15 +89,22 @@
 }
 
 .mr-cereal {
-    background: teal;
+    padding-top: calc(100%);
+
+    background: #FEE090;
+    border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 5/7;
 }
 
 .mr-gift {
-    background: red;
+    padding-top: calc(100%);
+    
+    background: #FFD1D1;
+    border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 7/9;
+    align-self: end;
 }
 
 .mr-sticker-lg {
@@ -71,7 +127,10 @@
 }
 
 .mr-milk-bag {
-    background: blue;
+    padding-top: calc(541/386 * 100%);
+
+    background: #AAEEFF;
+    border-radius: var(--mr-border-radius);
     grid-column: 6/9;
     grid-row: 5/9;
 }
@@ -104,14 +163,13 @@
     grid-row: 9/12;
 }
 
-.mr-cards img,
-.mr-milk-bag img,
-.mr-cereal img,
-.mr-gift img,
-.mr-tiles-gif img,
-.mr-grid img
+.aspect-ratio-box img
 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
 }
 
 
