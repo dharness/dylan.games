@@ -21,51 +21,56 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1630px;
-    background: black;
     margin: 20px 90px;
 }
 
-.dh-section {
+.section {
     width: 100%;
+    background: rebeccapurple;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-.dh-section--sub-header {
+.section-title {
+    font-family: 'Good Unicorn';
+}
+
+.section-subtitle {
     font-family: 'Bahnschrift';
-    font-weight: bold;
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-end;
-    margin-bottom: 10px;
 }
 
-.dh-section--sub-header p {
-    margin: auto 0px 0px 0px;
-}
-
-.dh-section--sub-header img {
-    margin-bottom: 4px;
+.section-description {
+    font-family: 'Lucida Sans Unicode';
 }
 
 .dh-section--body {
-    font-family: 'Lucida Sans Unicode';
-    line-height: 32px;
-    font-size: 20px;
+    display: none;
+    --min-vw: 300;
+    --max-vw: 2000;
+    --min-size: 14;
+    --max-size: 20;
+    /* font-size: calc(var(--min-size)px+(var(--max-size) - var(--min-size)) * ((100vw - var(--min-vw)px) / (var(--max-vw) - var(--min-vw))));
+    line-height: calc(32px + 1vw); */
     padding-right: 100px;
-}
-
-.dh-section--title {
-    font-family: 'Good Unicorn';
-    font-size: 80px;
-}
-
-.dh-section--intro {
-    grid-column: 1 / 9;
-    background: blue;
-    display: flex;
-    flex-direction: column;
 }
 
 .dh-section--mr-left {
     min-width: 67%;
 }
+
+
+/* @media (max-width: 640px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 1024px) {
+    .dh-section--title {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 1280px) {
+    .dh-section--title {
+        font-size: 80px;
+    }
+} */

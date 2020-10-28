@@ -1,22 +1,26 @@
 var { src, dest, parallel, series, watch } = require('gulp');
+var pug = require('gulp-pug');
 const nunjucksRender = require('gulp-nunjucks-render');
+var postcss = require('gulp-postcss');
 const del = require('del');
 const data = require('gulp-data');
 var path = require('path');
 
 const fs = require('fs');
-const htmlPath = './src/**/*.html';
+const pugPath = './src/**/*.pug';
 const cssPath = './src/**/*.css';
 const assetsPath = './src/assets/**/**';
 
 
-function html () {
-    return src(htmlPath)
+function html() {
+    return src(pugPath)
+        .pipe(pug())
         .pipe(dest('docs'));
 };
 
-function css () {
+function css() {
     return src(cssPath)
+        .pipe(postcss())
         .pipe(dest('docs'));
 };
 
@@ -25,20 +29,20 @@ function assets() {
         .pipe(dest('docs/assets'));
 };
 
-function clean () {
+function clean() {
     return del(['docs']);
 };
 
 const runTasks = series(clean, parallel(html, css, assets));
 
-exports.default = function (done) {
+exports.default = function(done) {
     runTasks();
     done();
 }
 
-exports.watch = function () {
+exports.watch = function() {
     runTasks();
 
     watch(cssPath, css);
-    watch(htmlPath, html);
+    watch(pugPath, html);
 }
