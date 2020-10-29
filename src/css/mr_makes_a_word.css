@@ -2,6 +2,21 @@
     --mr-border-radius: 7px;
 }
 
+.aspect-ratio-box-inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flexbox-centering {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 text {
     font-family: 'Good Unicorn';
 }
@@ -99,6 +114,10 @@ svg {
     grid-row: 5/7;
 }
 
+.mr-cereal img {
+
+}
+
 .mr-gift {
     padding-top: calc(100%);
     
@@ -133,6 +152,7 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 11/13;
+    align-self: end;
 }
 
 .mr-milk-bag {
@@ -160,30 +180,29 @@ svg {
 }
 
 .mr-powerups-1 {
-    padding-top: 50%;
+    padding-top: 25%;
 
     grid-column: 6/9;
     grid-row: 12/13;
+    align-self: end;
 }
 
 .mr-powerups-2 {
+    padding-top: calc(111/517 * 100%);
+
+    background: #AAEEFE;
     grid-column: 9/13;
-    grid-row: 12/13;
+    grid-row: 9/10;
 }
 
 .mr-lemoon {
+    padding-top: calc(365/518 * 100%);
+    
+    background: #FDE496;
     border-radius: var(--mr-border-radius);
     grid-column: 9/13;
-    grid-row: 9/12;
-}
-
-.aspect-ratio-box img
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    grid-row: 10/13;
+    align-self: end;
 }
 
 

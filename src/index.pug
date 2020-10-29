@@ -1,3 +1,9 @@
+mixin aspect-ratio-img(class_name, img_path)
+    div(class='aspect-ratio-box ' + class_name)
+        .aspect-ratio-box-inside
+            .flexbox-centering
+                img(src=img_path alt='')
+
 doctype html
 head
     meta(charset='UTF-8')
@@ -23,14 +29,10 @@ head
                 video(controls='' width='100%')
                     source(src='./assets/videos/portrait_v1.mp4' type='video/mp4')
                     | Sorry, your browser doesn&apos;t support embedded videos.
-        .mr-cards.aspect-ratio-box
-            img(src='./assets/images/mr/bobmeat.png' alt='')
-        .mr-cereal.aspect-ratio-box
-            //- img(src='assets/images/mr/cereal_box.png' alt='')
-        .mr-gift.aspect-ratio-box
-            //- img(src='assets/images/mr/gift.png' alt='')
-        .mr-milk-bag.aspect-ratio-box
-            //- img(src='assets/images/mr/milkbag.png' alt='')
+        +aspect-ratio-img('mr-cards','./assets/images/mr/bobmeat.png')
+        +aspect-ratio-img('mr-cereal' ,'./assets/images/mr/cereal_box.png')
+        +aspect-ratio-img('mr-gift' ,'./assets/images/mr/gift.png')
+        +aspect-ratio-img('mr-milk-bag' ,'./assets/images/mr/gif/milkbag.gif')
         .mr-tiles-gif.aspect-ratio-box
             //- img(src='assets/images/mr/tiles-gif.png' alt='')
         .mr-powerups-1.aspect-ratio-box
