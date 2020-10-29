@@ -1,6 +1,11 @@
+:root {
+    --rh-border-radius: 7px;
+}
+
 .rh-layout {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .rh-intro {
@@ -8,13 +13,38 @@
     flex-direction: row;
 }
 
+.rh-title {
+    font-size: 15vw;
+}
+
+.rh-subtitle {
+    font-size: 2.8vw;
+    padding: 15px 0px;
+}
+
 .rh-text {
     width: 50%;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.rh-description {
+    font-size: 2.5vw;
+    line-height: 4vw;
+    padding-bottom: 22px;
 }
 
 .rh-trailer {
-    flex: 1;
-    background: black;
+    padding-top: calc(1080/1920 * 100%);
+}
+
+.rh-trailer-frame {
+    position: absolute;
+    top: 0%;
+    border-radius: var(--rh-border-radius);
+    overflow: hidden;
+    height: 100%;
 }
 
 .rh-img-grid {
@@ -28,7 +58,10 @@
     grid-column: 1/2;
 
     background: #B7FAD6;
-    border-radius: var(--mr-border-radius);
+    border-radius: var(--rh-border-radius);
+    img {
+        width: 80%;
+    }
 }
 
 .rh-carry {
@@ -36,7 +69,10 @@
     grid-column: 2/3;
     
     background: #AFEFFA;
-    border-radius: var(--mr-border-radius);
+    border-radius: var(--rh-border-radius);
+    img {
+        width: 80%;
+    }
 }
 
 .rh-jump {
@@ -44,21 +80,44 @@
     grid-column: 3/4;
 
     background: #FFDBF9;
-    border-radius: var(--mr-border-radius);
+    border-radius: var(--rh-border-radius);
+    img {
+        width: 80%;
+    }
 }
 
 .rh-dad {
     padding-top: 100%;
     grid-column: 4/5;
-
+    
     background: #FAED88;
-    border-radius: var(--mr-border-radius);
+    border-radius: var(--rh-border-radius);
+    img {
+        width: 51%;
+    }
+}
+
+.rh-mom img, .rh-dad img {
+    position: absolute;
+    top: 0%;
+}
+
+.crisp img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 
 /* ----------------------------------------- */
 
 @media (max-width: 767px) {
+    .rh-intro {
+        flex-direction: column;
+    }
+    .rh-trailer {
+        display: flex;
+    }
     .rh-img-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
