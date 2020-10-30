@@ -19,11 +19,7 @@ include aspect-ratio-img
                     source(src='./assets/videos/portrait_v1.mp4' type='video/mp4')
                     | Sorry, your browser doesn&apos;t support embedded videos.
 
-    div(class='aspect-ratio-box mr-cards')
-        .aspect-ratio-box-inside
-            .flexbox-centering
-                img#mr-cards-img(src='./assets/images/mr/cards/bobmeat.png' alt='')
-
+    +aspect-ratio-img('mr-cards' ,'./assets/images/mr/cards/bobmeat.png', id='mr-cards-img')
     +aspect-ratio-img('mr-cereal' ,'./assets/images/mr/gif/cereal.gif')
     +aspect-ratio-img('mr-gift' ,'./assets/images/mr/gif/gift.gif')
     +aspect-ratio-img('mr-milk-bag' ,'./assets/images/mr/gif/milkbag.gif')
@@ -34,8 +30,8 @@ include aspect-ratio-img
         //- img(src='assets/images/mr/egg.png' alt='')
         //- img(src='assets/images/mr/banana.png' alt='')
     .mr-powerups-2.aspect-ratio-box
-    +aspect-ratio-img('mr-sticker-lg' ,'./assets/images/mr/stickers/large/blender.png')
-    +aspect-ratio-img('mr-sticker-sm-1' ,'./assets/images/mr/powerups.png')
-    +aspect-ratio-img('mr-sticker-sm-2' ,'./assets/images/mr/powerups.png')
+    +aspect-ratio-img('mr-sticker-lg' ,'./assets/images/mr/stickers/large/blender.png', 'mr-sticker-lg')
+    +aspect-ratio-img('mr-sticker-sm-1' ,'./assets/images/mr/stickers/small_1/box_bolts.png', 'mr-sticker-sm-1')
+    +aspect-ratio-img('mr-sticker-sm-2' ,'./assets/images/mr/stickers/small_2/insects_bag-of-garbage.png', 'mr-sticker-sm-2')
     .mr-lemoon.aspect-ratio-box
         //- img(src='assets/images/mr/CloudLemoonBadgeController.png' alt='')

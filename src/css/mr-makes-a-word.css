@@ -84,6 +84,7 @@ svg {
     @media (max-width: 767px) {
         font-size: 5vw;
         position: unset;
+        img { width: 30% }
     }
 }
 
@@ -178,6 +179,9 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 9/11;
+    img {
+        width: 100%;
+    }
 }
 
 .mr-sticker-sm-2 {
@@ -188,6 +192,9 @@ svg {
     grid-column: 4/6;
     grid-row: 11/13;
     align-self: end;
+    img {
+        width: 100%;
+    }
 }
 
 .mr-milk-bag {
