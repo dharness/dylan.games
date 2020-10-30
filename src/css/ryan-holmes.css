@@ -11,15 +11,41 @@
 .rh-intro {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
 }
 
 .rh-title {
-    font-size: 15vw;
+    font-size: 9.9vw;
+    @media (max-width: 767px) {
+        font-size: 15vw;
+    }
 }
 
 .rh-subtitle {
-    font-size: 2.8vw;
     padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 1.9vw;
+    img {
+        width: 20%;
+        padding-right: 20px;
+    }
+    @media (max-width: 767px) {
+        font-size: 2.8vw;
+        margin-bottom: 15px;
+        img {
+            width: 30%;
+            padding-right: 0px;
+        }
+        div {
+            position: relative;
+            bottom: -2.9vw;
+        }
+    }
 }
 
 .rh-text {
@@ -30,13 +56,24 @@
 }
 
 .rh-description {
-    font-size: 2.5vw;
-    line-height: 4vw;
-    padding-bottom: 22px;
+    font-size: 1.7vw;
+    line-height: 3vw;
+    padding-right: 20px;
+    @media (max-width: 767px) {
+        font-size: 2.5vw;
+        padding-bottom: 22px;
+        line-height: 4vw;
+    }
 }
 
 .rh-trailer {
-    padding-top: calc(1080/1920 * 100%);
+    padding-top: 28%;
+    display: flex;
+    width: 50%;
+    @media (max-width: 767px) {
+        padding-top: calc(1080/1920 * 100%);
+        width: 100%;
+    }
 }
 
 .rh-trailer-frame {
@@ -114,9 +151,6 @@
 @media (max-width: 767px) {
     .rh-intro {
         flex-direction: column;
-    }
-    .rh-trailer {
-        display: flex;
     }
     .rh-img-grid {
         grid-template-columns: repeat(2, 1fr);
