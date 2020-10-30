@@ -9,6 +9,7 @@ var path = require('path');
 const fs = require('fs');
 const pugPath = './src/**/*.pug';
 const cssPath = './src/**/*.css';
+const jsPath = './src/**/*.js';
 const assetsPath = './src/assets/**/**';
 
 
@@ -24,6 +25,11 @@ function css() {
         .pipe(dest('docs'));
 };
 
+function js() {
+    return src(jsPath)
+        .pipe(dest('docs'));
+};
+
 function assets() {
     return src(assetsPath)
         .pipe(dest('docs/assets'));
@@ -33,7 +39,7 @@ function clean() {
     return del(['docs']);
 };
 
-const runTasks = series(clean, parallel(html, css, assets));
+const runTasks = series(clean, parallel(html, css, assets, js));
 
 exports.default = function(done) {
     runTasks();
@@ -45,4 +51,5 @@ exports.watch = function() {
 
     watch(cssPath, css);
     watch(pugPath, html);
+    watch(jsPath, js);
 }

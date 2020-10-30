@@ -38,31 +38,26 @@ body {
 
 .section-subtitle {
     font-family: 'Bahnschrift';
+    font-size: 1.9vw;
 }
 
 .section-description {
     font-family: 'Lucida Sans Unicode';
-}
-
-.dh-section--body {
-    display: none;
-    --min-vw: 300;
-    --max-vw: 2000;
-    --min-size: 14;
-    --max-size: 20;
-    /* font-size: calc(var(--min-size)px+(var(--max-size) - var(--min-size)) * ((100vw - var(--min-vw)px) / (var(--max-vw) - var(--min-vw))));
-    line-height: calc(32px + 1vw); */
-    padding-right: 100px;
-}
-
-.dh-section--mr-left {
-    min-width: 67%;
+    font-size: 1.7vw;
+    line-height: 3vw;
 }
 
 /* Small */
 
 @media (max-width: 767px) {
     .page-wrapper {
-        margin: 10% 15%;
+        margin: 10% 5% 0% 5%;
+    }
+    .section-subtitle {
+        font-size: 4.8vw;
+    }
+    .section-description {
+        font-size: 3.8vw;
+        line-height: 6vw;
     }
 }
