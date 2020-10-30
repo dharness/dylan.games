@@ -209,7 +209,7 @@ svg {
 
 .mr-powerups-1, .mr-powerups-2 {
     border-radius: var(--mr-border-radius);
-    background: #5ACBF4;
+    background: #AAEEFE;
     display: flex;
     overflow: unset;
 }
@@ -223,8 +223,6 @@ svg {
 
 .mr-powerups-2 {
     padding-top: calc(111/517 * 100%);
-
-    background: #AAEEFE;
     grid-column: 9/13;
     grid-row: 9/10;
 }
