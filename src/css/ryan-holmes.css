@@ -5,7 +5,7 @@
 .rh-layout {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .rh-intro {
@@ -29,13 +29,12 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    font-size: 1.9vw;
     img {
         width: 20%;
         padding-right: 20px;
+        height: 100%;
     }
     @media (max-width: 767px) {
-        font-size: 2.8vw;
         margin-bottom: 15px;
         img {
             width: 30%;
@@ -60,9 +59,9 @@
     line-height: 3vw;
     padding-right: 20px;
     @media (max-width: 767px) {
-        font-size: 2.5vw;
+        font-size: 3.8vw;
         padding-bottom: 22px;
-        line-height: 4vw;
+        line-height: 6vw;
     }
 }
 
@@ -150,7 +149,7 @@
 }
 
 .rh-scene-wrapper {
-    margin-top: -100px;
+    margin-top: -90px;
     .rh-scene { padding-top: calc(1080/1920 * 100%);}
     img { width: 100%; }
     @media (max-width: 767px) {
