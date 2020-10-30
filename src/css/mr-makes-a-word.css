@@ -128,7 +128,7 @@ svg {
 }
 
 .mr-cards {
-    padding-top: calc(541/386 * 100%);
+    padding-top: calc(1665/1165 * 100%);
 
     background: violet;
     grid-column: 1/4;
@@ -211,11 +211,11 @@ svg {
     border-radius: var(--mr-border-radius);
     background: #5ACBF4;
     display: flex;
+    overflow: unset;
 }
 
 .mr-powerups-1 {
     padding-top: 25%;
-    overflow: unset;
     grid-column: 6/9;
     grid-row: 12/13;
     align-self: end;
@@ -231,6 +231,11 @@ svg {
 
 .mr-powerups-1 img {
     width: 83%;
+    margin-bottom: 6%;
+}
+
+.mr-powerups-2 img {
+    width: 73%;
     margin-bottom: 6%;
 }
 
