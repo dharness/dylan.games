@@ -249,6 +249,21 @@ svg {
     align-self: end;
 }
 
+.mr-milk {
+    overflow: hidden;
+    width: 100%;
+}
+
+#sploosh {
+    padding-top: 37px;
+    margin: auto;
+    display: block;
+    margin-left: -10%;
+    overflow: hidden;
+    width: 120%;
+}
+
+
 
 /* ----------------------------------------- */
 
