@@ -169,6 +169,7 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 1/4;
     grid-row: 9/13;
+    img { width: 100%; }
 }
 .mr-sticker-sm-1 {
     padding-top: 100%;

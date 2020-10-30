@@ -1,5 +1,17 @@
 (function main() {
-    const cardNames = [
+    function cycleImage(imgNode, options, interval) {
+        
+        setInterval(changeImg, interval);
+        
+        let imgIndex = 0;
+        function changeImg() {
+            imgNode.src = `./assets/images/mr/cards/${options[imgIndex]}.png`;
+            imgIndex = (imgIndex + 1) % options.length;
+        }
+        changeImg();
+    }
+
+    const options = [
         '7friends',
         'bobmeat',
         'box',
@@ -15,12 +27,6 @@
         'wanda'
     ];
     const cardsImg = document.getElementById('mr-cards-img');
-    
-    setInterval(changeCard, 3000);
-    
-    let cardIndex = 0;
-    function changeCard() {
-        cardsImg.src = `./assets/images/mr/cards/${cardNames[cardIndex]}.png`;
-        cardIndex = (cardIndex + 1) % cardNames.length;
-    }
+    cycleImage(cardsImg, options, 3000);
+
 })();
