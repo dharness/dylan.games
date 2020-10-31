@@ -27,16 +27,15 @@ svg {
 
 .mr-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, auto);
+    margin: auto;
+    grid-template-columns: repeat(12, 6vw);
+    grid-template-rows: repeat(8, auto) repeat(4, 6vw);
     column-gap: 20px;
     row-gap: 20px;
 }
 
 .mr-desktop-text-layout {
     padding-top: calc(350/1073 * 100%);
-
-    background: orchid;
     grid-column: 1/9;
     grid-row: 1/5;
     display: flex;
@@ -75,7 +74,6 @@ svg {
     justify-content: space-between;
     font-size: 2vw;
     height: 10%;
-    background: red;
     position: absolute;
     top: 40%;
     left: 0;
@@ -89,7 +87,6 @@ svg {
 }
 
 .mr-description {
-    background: yellow;
     font-size: 1.3vw;
     position: absolute;
     top: 55%;
@@ -106,10 +103,9 @@ svg {
 
 
 .mr-trailer {
-    padding-top: calc(1920/1080 * 100%);
+    padding-top: calc(7/4 * 100%);
     grid-column: 9/13;
     grid-row: 1/9;
-    background: yellow;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -129,9 +125,8 @@ svg {
 }
 
 .mr-cards {
-    padding-top: calc(541/386 * 100%);
+    padding-top: calc(4/3 * 100%);
 
-    background: violet;
     grid-column: 1/4;
     grid-row: 5/9;
 
@@ -155,7 +150,6 @@ svg {
 
 .mr-gift {
     padding-top: calc(100%);
-    
     background: #FFD1D1;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
@@ -164,14 +158,13 @@ svg {
 }
 
 .mr-sticker-lg {
-    padding-top: calc(509/360 * 100%);
-
     background: #AAEEFE;
     border-radius: var(--mr-border-radius);
     grid-column: 1/4;
     grid-row: 9/13;
     img {
         width: 100%;
+        height: 100%;
     }
 }
 
@@ -237,7 +230,6 @@ svg {
 
 .mr-sticker-sm-1 {
     padding-top: 100%;
-
     background: #FEE090;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
@@ -261,7 +253,7 @@ svg {
 }
 
 .mr-milk-bag {
-    padding-top: calc(541/386 * 100%);
+    padding-top: calc(4/3 * 100%);
 
     background: #AAEEFF;
     border-radius: var(--mr-border-radius);
@@ -280,22 +272,20 @@ svg {
 
 .mr-powerups-1, .mr-powerups-2 {
     border-radius: var(--mr-border-radius);
-    background: #5ACBF4;
+    background: #AAEEFE;
     display: flex;
+    overflow: unset;
 }
 
 .mr-powerups-1 {
-    padding-top: 25%;
-    overflow: unset;
+    padding-top: calc(1/3 *100%);
     grid-column: 6/9;
     grid-row: 12/13;
     align-self: end;
 }
 
 .mr-powerups-2 {
-    padding-top: calc(111/517 * 100%);
-
-    background: #AAEEFE;
+    padding-top: calc(1/4 * 100%);
     grid-column: 9/13;
     grid-row: 9/10;
 }
@@ -305,15 +295,41 @@ svg {
     margin-bottom: 6%;
 }
 
+.mr-powerups-2 img {
+    width: 73%;
+    margin-bottom: 6%;
+}
+
 .mr-lemoon {
-    padding-top: calc(365/518 * 100%);
+    padding-top: calc(2/4 * 100%);
     
     background: #FDE496;
     border-radius: var(--mr-border-radius);
     grid-column: 9/13;
-    grid-row: 10/13;
-    align-self: end;
+    grid-row: 10/12;
+    overflow: unset;
+    img {
+        left: 12%;
+        top: 19%;
+        position: absolute;
+        width: 100%;
+    }
 }
+
+.mr-milk {
+    overflow: hidden;
+    width: 100%;
+}
+
+#sploosh {
+    padding-top: 37px;
+    margin: auto;
+    display: block;
+    margin-left: -10%;
+    overflow: hidden;
+    width: 120%;
+}
+
 
 
 /* ----------------------------------------- */
@@ -323,18 +339,12 @@ svg {
 /* Large */
 
 @media (min-width: 1200px) {
-    .mr-grid {
-        background: lime;
-    }
 }
 
 
 /* Meidum */
 
 @media (min-width: 768px) and (max-width: 1199px) {
-    .mr-grid {
-        background: orange;
-    }
 }
 
 
@@ -342,7 +352,6 @@ svg {
 
 @media (max-width: 767px) {
     .mr-grid {
-        background: olive;
         grid-template-rows: repeat(19, auto);
         grid-template-columns: repeat(24, 1fr);
         column-gap: 10px;
@@ -394,7 +403,6 @@ svg {
         grid-row: 14/15;
     }
     .mr-cereal img {
-        background-color: plum;
         width: 50%;
     }
     .mr-gift {

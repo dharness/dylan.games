@@ -25,14 +25,12 @@ include aspect-ratio-img
     +aspect-ratio-img('mr-milk-bag' ,'./assets/images/mr/gif/milkbag.gif')
     +aspect-ratio-img('mr-tiles-gif' ,'./assets/images/mr/gif/tiles-gif.gif')
     +aspect-ratio-img('mr-powerups-1' ,'./assets/images/mr/powerups.png')
-    //- .mr-powerups-1.aspect-ratio-box
-        //- img(src='assets/images/mr/coffee.png' alt='')
-        //- img(src='assets/images/mr/egg.png' alt='')
-        //- img(src='assets/images/mr/banana.png' alt='')
     .mr-powerups-2.aspect-ratio-box
-    +aspect-ratio-img('mr-sticker-lg allow-overflow' ,'./assets/images/mr/stickers/large/blender.png', 'mr-sticker-lg')
-    +aspect-ratio-img('mr-sticker-lg-poof allow-overflow' ,'./assets/mr-makes/smokes/smokey_0002_Layer-7.png', 'mr-sticker-lg-poof')
+    .mr-sticker-lg#mr-sticker-lg.allow-overflow
+        img(src='./assets/images/mr/stickers/large/blender.png')
 
+    //- Poof stuff, idk if we will use this at all
+    //- +aspect-ratio-img('mr-sticker-lg-poof allow-overflow' ,'./assets/mr-makes/smokes/smokey_0002_Layer-7.png', 'mr-sticker-lg-poof')
     //- .mr-sticker-poof-lg.aspect-ratio-box.allow-overflow
     //-     .aspect-ratio-box-inside
     //-         .flexbox-centering
@@ -41,5 +39,5 @@ include aspect-ratio-img
 
     +aspect-ratio-img('mr-sticker-sm-1' ,'./assets/images/mr/stickers/small_1/box_bolts.png', 'mr-sticker-sm-1')
     +aspect-ratio-img('mr-sticker-sm-2' ,'./assets/images/mr/stickers/small_2/insects_bag-of-garbage.png', 'mr-sticker-sm-2')
-    .mr-lemoon.aspect-ratio-box
-        //- img(src='assets/images/mr/CloudLemoonBadgeController.png' alt='')
+    +aspect-ratio-img('mr-powerups-2' ,'./assets/images/mr/icons.png')
+    +aspect-ratio-img('mr-lemoon' ,'./assets/images/mr/lemoon.png')
