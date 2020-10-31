@@ -47,6 +47,13 @@ body {
     line-height: 3vw;
 }
 
+.allow-overflow {
+    overflow: unset;
+    &.aspect-ratio-box {
+        overflow: unset;
+    }
+}
+
 /* Small */
 
 @media (max-width: 767px) {

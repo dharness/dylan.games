@@ -30,7 +30,15 @@ include aspect-ratio-img
         //- img(src='assets/images/mr/egg.png' alt='')
         //- img(src='assets/images/mr/banana.png' alt='')
     .mr-powerups-2.aspect-ratio-box
-    +aspect-ratio-img('mr-sticker-lg' ,'./assets/images/mr/stickers/large/blender.png', 'mr-sticker-lg')
+    +aspect-ratio-img('mr-sticker-lg allow-overflow' ,'./assets/images/mr/stickers/large/blender.png', 'mr-sticker-lg')
+    +aspect-ratio-img('mr-sticker-lg-poof allow-overflow' ,'./assets/mr-makes/smokes/smokey_0002_Layer-7.png', 'mr-sticker-lg-poof')
+
+    //- .mr-sticker-poof-lg.aspect-ratio-box.allow-overflow
+    //-     .aspect-ratio-box-inside
+    //-         .flexbox-centering
+    //-             .sticker-poof-wrapper
+    //-                 .sticker-poof#sticker-poof-anim
+
     +aspect-ratio-img('mr-sticker-sm-1' ,'./assets/images/mr/stickers/small_1/box_bolts.png', 'mr-sticker-sm-1')
     +aspect-ratio-img('mr-sticker-sm-2' ,'./assets/images/mr/stickers/small_2/insects_bag-of-garbage.png', 'mr-sticker-sm-2')
     .mr-lemoon.aspect-ratio-box

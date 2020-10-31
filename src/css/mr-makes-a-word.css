@@ -170,8 +170,71 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 1/4;
     grid-row: 9/13;
-    img { width: 100%; }
+    img {
+        width: 100%;
+    }
 }
+
+.mr-sticker-lg-scale {
+    transform-origin: center;
+    animation: scale 300ms ease-in-out forwards;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0.1);
+      }
+    to {
+      transform: scale(1);
+    }
+  }
+
+.mr-sticker-lg-poof {
+    padding-top: calc(509/360 * 100%);
+
+    border-radius: var(--mr-border-radius);
+    grid-column: 1/4;
+    grid-row: 9/13;
+    position: relative;
+    img { width: 130%; }
+}
+
+#sticker-poof-anim {
+    /* background-image: url('https://i.stack.imgur.com/J5drY.png'); */
+    background-image: url('/assets/mr-makes/smoke-poof-spritesheet.png');
+    background-repeat: no-repeat;
+    background-size: 800%;
+    /* width: 100%;
+    height: 100%; */
+    border: solid 1px red;
+    animation: anim 1s steps(8) infinite;
+    background-position: 0 0;
+    /* margin: 0 auto;
+    width: 40%; */
+}
+
+@keyframes anim {
+    100% { background-position: 800% 0; }
+}
+
+.sticker-poof-wrapper {
+    width: 100%;
+    height: 100%;
+    background: plum;
+    position: relative;
+    /* left: 0px;
+    top: 0px; */
+}
+
+.sticker-poof {
+    width: 250px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
 .mr-sticker-sm-1 {
     padding-top: 100%;
 
@@ -340,6 +403,10 @@ svg {
         align-self: end;
     }
     .mr-sticker-lg {
+        grid-column: 1/14;
+        grid-row: 16/18;
+    }
+    .mr-sticker-lg-poof {
         grid-column: 1/14;
         grid-row: 16/18;
     }
