@@ -20,13 +20,10 @@ body {
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 1630px;
-    margin: 20px 90px;
 }
 
 .section {
     width: 100%;
-    background: rebeccapurple;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -50,9 +47,6 @@ body {
 /* Small */
 
 @media (max-width: 767px) {
-    .page-wrapper {
-        margin: 10% 5% 0% 5%;
-    }
     .section-subtitle {
         font-size: 4.8vw;
     }
