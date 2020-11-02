@@ -74,7 +74,7 @@ svg {
 
 .mr-trailer {
     grid-column: 9/13;
-    grid-row: 1/9;
+    grid-row: 2/9;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -84,6 +84,11 @@ svg {
     border-radius: var(--mr-border-radius);
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
+    height: 100%;
+    iframe {
+        width: 100%;
+        height: 101%;
+    }
 }
 
 .aspect-ratio-box {
@@ -125,6 +130,11 @@ svg {
     }
 }
 
+@keyframes entry {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 .mr-sticker-lg {
     background: #AAEEFE;
     border-radius: var(--mr-border-radius);
@@ -133,6 +143,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-duration: 10.5s;
 }
 
 .mr-sticker-lg-scale {
@@ -194,7 +205,6 @@ svg {
 }
 
 .mr-sticker-sm-1 {
-    padding-top: 100%;
     background: #FEE090;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
@@ -205,8 +215,6 @@ svg {
 }
 
 .mr-sticker-sm-2 {
-    padding-top: 100%;
-
     background: #FFD1D1;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
