@@ -110,7 +110,7 @@ const stickerData = {
     'lg': [
         {
             name: 'blender',
-            width: '95%',
+            width: '90%',
             color: '#ffd1d1'
         },
         {
@@ -124,14 +124,14 @@ const stickerData = {
             color: '#aaeefe'
         },
         {
-            name: 'bob_steak',
-            width: '71%',
-            color: '#ffd1d1'
-        },
-        {
             name: 'fish_dad',
             width: '81%',
             color: '#fee090'
+        },
+        {
+            name: 'bob_steak',
+            width: '71%',
+            color: '#aaeefe'
         },
         {
             name: 'mark_spaghetti',
@@ -151,7 +151,7 @@ const stickerData = {
         },
         {
             name: 'mosquitos_fly',
-            width: '73%',
+            width: '75%',
             color: '#aaeefe'
 
         },
@@ -167,7 +167,7 @@ const stickerData = {
         },
         {
             name: 'mosquitos_juice',
-            width: '100%',
+            width: '75%',
             color: '#fee090'
         },
         {
