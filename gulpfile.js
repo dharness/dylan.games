@@ -12,10 +12,14 @@ const cssPath = './src/**/*.css';
 const jsPath = './src/**/*.js';
 const assetsPath = './src/assets/**/**';
 
+const { largeStickerConfigs, smallStickerConfigs1, smallStickerConfigs2 } = require('./stickerConfig');
+
 
 function html() {
     return src(pugPath)
-        .pipe(pug())
+        .pipe(pug({
+            data: { largeStickerConfigs, smallStickerConfigs1, smallStickerConfigs2 }
+        }))
         .pipe(dest('docs'));
 };
 

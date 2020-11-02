@@ -150,7 +150,6 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-name: entry;
     animation-duration: 10.5s;
 }
 
@@ -213,7 +212,6 @@ svg {
 }
 
 .mr-sticker-sm-1 {
-    padding-top: 100%;
     background: #FEE090;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
@@ -224,8 +222,6 @@ svg {
 }
 
 .mr-sticker-sm-2 {
-    padding-top: 100%;
-
     background: #FFD1D1;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
