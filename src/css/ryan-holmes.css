@@ -5,7 +5,8 @@
 .rh-layout {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin: 70px auto auto auto;
+    max-width: calc(60vw + 11*20px);
 }
 
 .rh-intro {
@@ -150,11 +151,22 @@
 
 .rh-scene-wrapper {
     margin-top: -90px;
-    .rh-scene { padding-top: calc(1080/1920 * 100%);}
-    img { width: 100%; }
+    .rh-scene { padding-top: 42% }
+    img {
+        width: 100%;
+        align-self: end;
+    }
+
     @media (max-width: 767px) {
         margin-top: 0px;
-        img { width: 175%; }
+        img {
+            width: 130%;
+            display: block;
+            margin: auto auto auto -21%;
+        }
+        .flexbox-centering {
+            display: unset;
+        }
     }
 }
 
@@ -162,6 +174,9 @@
 /* ----------------------------------------- */
 
 @media (max-width: 767px) {
+    .rh-layout {
+        max-width: 88vw;
+    }
     .rh-intro {
         flex-direction: column;
     }
