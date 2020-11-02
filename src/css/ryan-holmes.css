@@ -19,10 +19,6 @@
 }
 
 .rh-title {
-    font-size: 9.3vw;
-    @media (max-width: 767px) {
-        font-size: 15vw;
-    }
 }
 
 .rh-subtitle {
@@ -32,19 +28,7 @@
     position: relative;
     img {
         width: 20%;
-        padding-right: 20px;
         height: 100%;
-    }
-    @media (max-width: 767px) {
-        margin-bottom: 15px;
-        img {
-            width: 30%;
-            padding-right: 0px;
-        }
-        div {
-            position: relative;
-            bottom: -2.9vw;
-        }
     }
 }
 
@@ -56,13 +40,15 @@
 }
 
 .rh-description {
-    font-size: 1.7vw;
-    line-height: 3vw;
     padding-right: 20px;
-    @media (max-width: 767px) {
-        font-size: 3.8vw;
-        padding-bottom: 22px;
-        line-height: 6vw;
+    @media (max-width: 768px) {
+        font-size: 3.5vw;
+        line-height: 4.9vw;
+        margin-bottom: 8vw;
+    }
+    @media (min-width: 768px) and (max-width: 1281px) {
+        font-size: 1.4vw;
+        line-height: 2.3vw;
     }
 }
 
@@ -150,8 +136,7 @@
 }
 
 .rh-scene-wrapper {
-    margin-top: -90px;
-    .rh-scene { padding-top: 42% }
+    margin-top: -35px;
     img {
         width: 100%;
         align-self: end;
