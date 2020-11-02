@@ -22,32 +22,38 @@ include aspect-ratio-img
     .mr-tiles-gif
         img(src='./assets/images/mr/gif/tiles-gif.gif')
     .mr-sticker-lg.allow-overflow#sticker-lg-container
+        -var index = 0
         each val in largeStickerConfigs
             img(
                 src='./assets/mr-makes/stickers/lg/' + val.name + '.png',
                 id=val.name,
                 width=val.width,
-                style="display: none",
+                style=(index == 0) ? "display: unset" : "display: none",
                 data-bg-color=val.color
             )
+            - index++
     .mr-sticker-sm-1#sticker-sm1-container
+        -var index = 0
         each val in smallStickerConfigs1
             img(
                 src='./assets/mr-makes/stickers/sm-1/' + val.name + '.png',
                 id=val.name,
                 width=val.width,
-                style="display: none",
+                style=(index == 0) ? "display: unset" : "display: none",
                 data-bg-color=val.color
             )
+            - index++
     .mr-sticker-sm-2#sticker-sm2-container
+        -var index = 0
         each val in smallStickerConfigs2
             img(
                 src='./assets/mr-makes/stickers/sm-2/' + val.name + '.png',
                 id=val.name,
                 width=val.width,
-                style="display: none",
+                style=(index == 0) ? "display: unset" : "display: none",
                 data-bg-color=val.color
             )
+            - index++
     .mr-powerups-1
         img(src='./assets/images/mr/powerups.png')
     .mr-powerups-2
