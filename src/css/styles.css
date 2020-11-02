@@ -29,19 +29,32 @@ body {
 }
 
 .section-title {
+    font-size: 8vw;
     font-family: 'Good Unicorn';
     display: flex;
+    @media (max-width: 767px) {
+        font-size: 14.7vw;
+    }
 }
 
 .section-subtitle {
     font-family: 'Bahnschrift';
-    font-size: 1.9vw;
+    font-size: 1.7vw;
 }
 
 .section-description {
     font-family: 'Lucida Sans Unicode';
-    font-size: 1.7vw;
-    line-height: 3vw;
+    font-size: 1vw;
+    line-height: 1.8vw;
+    /* @media (max-width: 768px) {
+        font-size: 3.5vw;
+        line-height: 4.9vw;
+        position: unset;
+    }
+    @media (min-width: 768px) and (max-width: 1281px) {
+        font-size: 1.4vw;
+        line-height: 2.3vw;
+    } */
 }
 
 .allow-overflow {

@@ -38,45 +38,37 @@ svg {
 .mr-title {
     grid-column: 1/9;
     grid-row: 1/2;
-    font-family: 'Good Unicorn';
-    font-size: 8vw;
 }
 
 
 .mr-subtitle {
     display: flex;
     justify-content: space-between;
-    font-size: 2vw;
     grid-column: 1/9;
     grid-row: 2/3;
-    /* height: 10%;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 100%;
-    height: 15%; */
-    @media (max-width: 767px) {
-        font-size: 5vw;
-        position: unset;
-        img { width: 30% }
+    img {
+        width: 14%;
+    }
+    @media (max-width: 768px) {
+        img {
+            width: 20%;
+        }
     }
 }
 
 .mr-description {
     grid-column: 1/9;
-    grid-row: 3/4;
-    font-size: 1.3vw;
-    line-height: 2.3vw;
-    /* position: absolute;
-    top: 55%;
-    left: 0;
-    width: 100%;
-    height: 45%; */
-    @media (max-width: 767px) {
-        font-size: 3vw;
-        line-height: 4.3vw;
+    grid-row: 3/5;
+    @media (max-width: 768px) {
+        font-size: 3.5vw;
+        line-height: 4.9vw;
         position: unset;
     }
+    @media (min-width: 768px) and (max-width: 1281px) {
+        font-size: 1.4vw;
+        line-height: 2.3vw;
+    }
+    
 }
 
 
@@ -132,6 +124,7 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 7/9;
+    overflow: hidden;
     img {
         width: 100%;
     }
@@ -285,7 +278,7 @@ svg {
     background-color: #AAEEFE;
     border-radius: var(--mr-border-radius);
     img {
-        height: 100%;
+        height: 112%;
         display: block;
         margin: -3% auto auto auto;
     }
@@ -345,7 +338,7 @@ svg {
 
 @media (max-width: 767px) {
     .mr-grid {
-        grid-template-rows: repeat(119, 4vw);
+        grid-template-rows: repeat(128, 4vw);
         grid-template-columns: repeat(22, 4vw);
         column-gap: unset;
         row-gap: unset;
@@ -353,8 +346,8 @@ svg {
     }
 
     .mr-trailer {
-        grid-column: 4/19;
-        grid-row: 16/42;
+        grid-column: 1/23;
+        grid-row: 15/51;
         padding-top: unset;
         overflow: hidden;
         &.aspect-ratio-box {
@@ -369,7 +362,7 @@ svg {
 
     .mr-subtitle {
         grid-column: 1/23;
-        grid-row: 6/8;
+        grid-row: 5/7;
         height: 100%;
     }
 
@@ -377,7 +370,6 @@ svg {
         grid-column: 1/23;
         grid-row: 1/4;
         display: block;
-        font-size: 14vw;
     }
     
     .mr-description {
@@ -388,16 +380,16 @@ svg {
 
     .mr-milk-bag {
         grid-column: 1/13;
-        grid-row: 45/61;
+        grid-row: 54/70;
     }
 
     .mr-tiles-gif {
         grid-column: 14/23;
-        grid-row: 45/54;
+        grid-row: 54/63;
     }
     .mr-powerups-1 {
         grid-column: 14/23;
-        grid-row: 56/61;
+        grid-row: 65/70;
         background-color: #AAEEFE;
         img {
             width: 100%;
@@ -408,7 +400,7 @@ svg {
     }
     .mr-powerups-2 {
         grid-column: 1/23;
-        grid-row: 102/107;
+        grid-row: 111/116;
         display: unset;
         img {
             width: 80%;
@@ -419,38 +411,38 @@ svg {
     }
     .mr-cards {
         grid-column: 1/13;
-        grid-row: 63/80;
+        grid-row: 72/89;
         img {
             margin-top: 0px;
         }
     }
     .mr-cereal {
         grid-column: 15/23;
-        grid-row: 63/71;
+        grid-row: 72/80;
     }
     .mr-gift {
         grid-column: 15/23;
-        grid-row: 72/80;
+        grid-row: 81/89;
     }
     .mr-sticker-lg {
         grid-column: 1/13;
-        grid-row: 82/99;
+        grid-row: 91/108;
     }
     .mr-sticker-lg-poof {
         grid-column: 1/13;
-        grid-row: 82/99;
+        grid-row: 91/108;
     }
     .mr-sticker-sm-1 {
         grid-column: 15/23;
-        grid-row: 82/90;
+        grid-row: 91/99;
     }
     .mr-sticker-sm-2 {
         grid-column: 15/23;
-        grid-row: 91/98;
+        grid-row: 100/107;
     }
     .mr-lemoon {
         grid-column: 1/23;
-        grid-row: 109/119;
+        grid-row: 118/128;
         img {
             display: block;
             margin: auto;
@@ -459,7 +451,7 @@ svg {
     }
     .mr-lemoon-bg {
         grid-column: 1/23;
-        grid-row: 109/116;
+        grid-row: 118/125;
     }
 }
 
