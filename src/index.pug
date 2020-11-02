@@ -1,3 +1,5 @@
+include aspect-ratio-img
+
 doctype html
 head
     meta(charset='UTF-8')
@@ -15,6 +17,9 @@ include milk-sploosh.pug
 
 .page-wrapper
     include ryan-holmes.pug
+
+.rh-scene-wrapper
+    +aspect-ratio-img('rh-scene crisp','./assets/ryan-holmes/scene.png')
 
 
 script(src="scripts/main.js")
