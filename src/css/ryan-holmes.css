@@ -137,6 +137,7 @@
 
 .rh-scene-wrapper {
     margin-top: -35px;
+    overflow: hidden;
     img {
         width: 100%;
         align-self: end;

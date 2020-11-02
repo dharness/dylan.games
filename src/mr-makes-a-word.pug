@@ -10,7 +10,11 @@ include aspect-ratio-img
         | Mr. Makes-A-Word is a fun and colorful word game for iOS. In addition to 13 cooky characters to unlock, the game features over 100 levels that increase in difficulty with the player&rsquo;s skill.
     .mr-trailer
         .mr-trailer-frame
-            iframe(src='https://player.vimeo.com/video/474758571' frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
+            video(width='100%' controls preload="none" poster="assets/mr-makes/video-thumbnail.png")
+                source(src='assets/videos/portrait_v1.mp4' type='video/mp4')
+                | Sorry, your browser doesn&apos;t support embedded videos.
+            //- iframe(src='https://player.vimeo.com/video/474758571?title=0&byline=0&portrait=0' width="640" height="1138" frameborder='0' allow='autoplay; fullscreen' allowfullscreen='')
+
 
     .mr-cards
         img(src='./assets/images/mr/cards/bobmeat.png' id='mr-cards-img')

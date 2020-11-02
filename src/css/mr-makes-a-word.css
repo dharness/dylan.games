@@ -81,10 +81,12 @@ svg {
 }
 
 .mr-trailer-frame {
+    display: flex;
     border-radius: var(--mr-border-radius);
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     height: 100%;
+    justify-content: center;
     iframe {
         width: 100%;
         height: 101%;
@@ -241,6 +243,9 @@ svg {
     background: #5ACBF4;
     grid-column: 6/9;
     grid-row: 9/12;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     img { width: 95%; }
 }
 
@@ -346,7 +351,7 @@ svg {
     }
 
     .mr-trailer {
-        grid-column: 1/23;
+        grid-column: 2/22;
         grid-row: 15/51;
         padding-top: unset;
         overflow: hidden;
@@ -357,6 +362,9 @@ svg {
         }
         .aspect-ratio-box-inside {
             position: relative;
+        }
+        video {
+            width: 102%;
         }
     }
 
