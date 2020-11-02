@@ -163,12 +163,12 @@ const stickerData = {
         {
             name: 'fish_lil-debbie',
             width: '95%',
-            color: '#ffd1d1'
+            color: '#fee090'
         },
         {
             name: 'mosquitos_juice',
-            width: '75%',
-            color: '#fee090'
+            width: '84%',
+            color: '#aaeefe'
         },
         {
             name: 'doris_dad',
@@ -239,3 +239,5 @@ function nextLargeSticker() {
     largeStickerIndex = (largeStickerIndex + 1) % stickerData[prefix].length;
     setSticker(prefix, largeStickerIndex);
 }
+
+window.setInterval(nextLargeSticker, 2000);

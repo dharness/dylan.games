@@ -157,6 +157,11 @@ svg {
     align-self: end;
 }
 
+@keyframes entry {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
 .mr-sticker-lg {
     background: #AAEEFE;
     border-radius: var(--mr-border-radius);
@@ -165,6 +170,8 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: entry;
+    animation-duration: 10.5s;
 }
 
 .mr-sticker-lg-scale {
