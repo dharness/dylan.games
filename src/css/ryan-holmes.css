@@ -5,7 +5,8 @@
 .rh-layout {
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin: 70px auto auto auto;
+    max-width: calc(60vw + 11*20px);
 }
 
 .rh-intro {
@@ -162,6 +163,9 @@
 /* ----------------------------------------- */
 
 @media (max-width: 767px) {
+    .rh-layout {
+        max-width: 88vw;
+    }
     .rh-intro {
         flex-direction: column;
     }
