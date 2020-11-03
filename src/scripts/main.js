@@ -46,8 +46,11 @@ function getStickerLists() {
 const stickerLgBg = document.querySelector('#sticker-lg-container');
 const stickerSm1Bg = document.querySelector('#sticker-sm1-container');
 const stickerSm2Bg = document.querySelector('#sticker-sm2-container');
+const card = document.querySelector('#mr-cards-img');
 const stickerLists = getStickerLists();
 let currentStickerIndices = { lg: 0, sm1: 0, sm2: 0 };
+const cardNames = ['7friends','doris', 'insects', 'mark', 'wanda', 'bobmeat', 'fish', 'leap', 'mosquitos', 'box', 'ganghis', 'madame', 'toungue'];
+let currentCardIndex = 0;
 
 function nextSticker(prefix) {
     const prevStickerEl = stickerLists[prefix][currentStickerIndices[prefix]];
@@ -62,7 +65,13 @@ function nextSticker(prefix) {
     bgEl.style.backgroundColor = currentStickerEl.dataset.bgColor;
 }
 
+function nextCard() {
+    card.src = `./assets/images/mr/cards/${cardNames[currentCardIndex]}.png`
+    currentCardIndex = (currentCardIndex + 1) % cardNames.length;
+}
+
 (function main() {
+    window.setInterval(() => nextCard(), 3100);
     window.setInterval(() => nextSticker('lg'), 3000);
 
     setTimeout(function() {

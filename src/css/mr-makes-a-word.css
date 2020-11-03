@@ -130,8 +130,11 @@ svg {
     grid-column: 4/6;
     grid-row: 6/8;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-        width: 100%;
+        width: 132%;
     }
 }
 
