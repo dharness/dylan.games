@@ -174,11 +174,6 @@ const smallStickerConfigs1 = [
         name: 'box_hammer',
         width: '60%',
         color: '#aaeefe', 
-    },
-    { 
-        name: 'madame_gravity',
-        width: '70%',
-        color: '#ffd1d1', 
     }
 ];
 
