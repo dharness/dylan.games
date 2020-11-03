@@ -44,26 +44,32 @@ function getStickerLists() {
 }
 
 const stickerLgBg = document.querySelector('#sticker-lg-container');
+const stickerSm1Bg = document.querySelector('#sticker-sm1-container');
+const stickerSm2Bg = document.querySelector('#sticker-sm2-container');
 const stickerLists = getStickerLists();
 let currentStickerIndices = { lg: 0, sm1: 0, sm2: 0 };
 
-function nextLargeSticker(prefix) {
+function nextSticker(prefix) {
     const prevStickerEl = stickerLists[prefix][currentStickerIndices[prefix]];
     prevStickerEl.style.display = 'none';
     currentStickerIndices[prefix] = (1 + currentStickerIndices[prefix]) % stickerLists[prefix].length;
     const currentStickerEl = stickerLists[prefix][currentStickerIndices[prefix]];
     currentStickerEl.style.display = 'unset';
-    stickerLgBg.style.backgroundColor = currentStickerEl.dataset.bgColor;
+    let bgEl = stickerLgBg;
+    if (prefix == 'sm1') { bgEl = stickerSm1Bg; }
+    else if (prefix == 'sm2') { bgEl = stickerSm2Bg; }
+
+    bgEl.style.backgroundColor = currentStickerEl.dataset.bgColor;
 }
 
 (function main() {
-    window.setInterval(() => nextLargeSticker('lg'), 3000);
+    window.setInterval(() => nextSticker('lg'), 3000);
 
     setTimeout(function() {
-        window.setInterval(() => nextLargeSticker('sm1'), 3000);
+        window.setInterval(() => nextSticker('sm1'), 3000);
     }, 1000);
     
     setTimeout(function() {
-        window.setInterval(() => nextLargeSticker('sm2'), 3000);
+        window.setInterval(() => nextSticker('sm2'), 3000);
     }, 2000);
 })();

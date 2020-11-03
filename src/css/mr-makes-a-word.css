@@ -209,9 +209,9 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 9/11;
-    img {
-        width: 100%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mr-sticker-sm-2 {
@@ -219,9 +219,9 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 11/13;
-    img {
-        width: 100%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mr-milk-bag {
