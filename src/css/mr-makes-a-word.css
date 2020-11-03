@@ -29,7 +29,7 @@ svg {
     display: grid;
     margin: auto;
     grid-template-columns: repeat(12, 5.0vw);
-    grid-template-rows: repeat(4, auto) repeat(8, 5.0vw);
+    grid-template-rows: repeat(3, auto) repeat(9, 5.0vw);
     column-gap: 20px;
     row-gap: 20px;
 }
