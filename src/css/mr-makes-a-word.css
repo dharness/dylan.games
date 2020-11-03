@@ -61,7 +61,7 @@ svg {
 
 .mr-description {
     grid-column: 1/9;
-    grid-row: 3/5;
+    grid-row: 3/4;
     @media (max-width: 768px) {
         font-size: 3.5vw;
         line-height: 4.9vw;
@@ -77,7 +77,7 @@ svg {
 
 .mr-trailer {
     grid-column: 9/13;
-    grid-row: 2/9;
+    grid-row: 1/8;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -104,7 +104,7 @@ svg {
 
 .mr-cards {
     grid-column: 1/4;
-    grid-row: 5/9;
+    grid-row: 4/8;
     border-radius: var(--mr-border-radius);
     overflow: hidden;
 
@@ -118,7 +118,7 @@ svg {
     background: #FEE090;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
-    grid-row: 5/7;
+    grid-row: 4/6;
     img {
         width: 100%;
     }
@@ -128,7 +128,7 @@ svg {
     background: #FFD1D1;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
-    grid-row: 7/9;
+    grid-row: 6/8;
     overflow: hidden;
     img {
         width: 100%;
@@ -144,7 +144,7 @@ svg {
     background: #AAEEFE;
     border-radius: var(--mr-border-radius);
     grid-column: 1/4;
-    grid-row: 9/13;
+    grid-row: 8/12;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,27 +213,27 @@ svg {
     background: #FEE090;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
-    grid-row: 9/11;
-    img {
-        width: 100%;
-    }
+    grid-row: 8/10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mr-sticker-sm-2 {
     background: #FFD1D1;
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
-    grid-row: 11/13;
-    img {
-        width: 100%;
-    }
+    grid-row: 10/12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mr-milk-bag {
     background: #AAEEFF;
     border-radius: var(--mr-border-radius);
     grid-column: 6/9;
-    grid-row: 5/9;
+    grid-row: 4/8;
     img {
         width: 90%;
         margin: auto;
@@ -245,7 +245,7 @@ svg {
     border-radius: var(--mr-border-radius);
     background: #5ACBF4;
     grid-column: 6/9;
-    grid-row: 9/12;
+    grid-row: 8/11;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@ svg {
 
 .mr-powerups-1 {
     grid-column: 6/9;
-    grid-row: 12/13;
+    grid-row: 11/12;
     position: relative;
     img {
         display: block;
@@ -282,7 +282,7 @@ svg {
 
 .mr-powerups-2 {
     grid-column: 9/13;
-    grid-row: 9/10;
+    grid-row: 8/9;
     background-color: #AAEEFE;
     border-radius: var(--mr-border-radius);
     img {
@@ -294,7 +294,7 @@ svg {
 
 .mr-lemoon {   
     grid-column: 9/13;
-    grid-row: 10/13;
+    grid-row: 9/12;
     overflow: unset;
     position: relative;
     img {
@@ -307,7 +307,7 @@ svg {
     background-color: #fde496;
     border-radius: var(--mr-border-radius);
     grid-column: 9/13;
-    grid-row: 10/12;
+    grid-row: 9/11;
 }
 
 .mr-milk {
