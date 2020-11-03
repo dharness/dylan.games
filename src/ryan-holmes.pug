@@ -12,8 +12,8 @@ include aspect-ratio-img
 
         .rh-trailer.aspect-ratio-box
             .rh-trailer-frame
-                video(controls='' width='100%')
-                    source(src='https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/1080/Big_Buck_Bunny_1080_10s_1MB.mp4' type='video/mp4')
+                video(controls='' width='100%' preload="none" poster="assets/ryan-holmes/trailer-thumbnail.png")
+                    source(src='assets/videos/rh-trailer.mp4' type='video/mp4')
                     | Sorry, your browser doesn&apos;t support embedded videos.
     .rh-img-grid
         +aspect-ratio-img('rh-mom crisp','./assets/ryan-holmes/mom.png')

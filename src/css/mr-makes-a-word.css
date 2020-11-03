@@ -46,11 +46,14 @@ svg {
     justify-content: space-between;
     grid-column: 1/9;
     grid-row: 2/3;
-    img {
+    a {
         width: 14%;
     }
+    img {
+        width: 100%;
+    }
     @media (max-width: 768px) {
-        img {
+        a {
             width: 20%;
         }
     }
