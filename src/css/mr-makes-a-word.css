@@ -119,8 +119,12 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 4/6;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-        width: 100%;
+        width: 130%;
     }
 }
 
@@ -134,7 +138,7 @@ svg {
     justify-content: center;
     align-items: center;
     img {
-        width: 132%;
+        width: 120%;
     }
 }
 
