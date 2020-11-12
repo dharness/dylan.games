@@ -66,7 +66,7 @@ function nextSticker(prefix) {
 }
 
 function nextCard() {
-    card.src = `./assets/images/mr/cards/${cardNames[currentCardIndex]}.png`
+    card.src = `./assets/mr-makes/cards/${cardNames[currentCardIndex]}.png`
     currentCardIndex = (currentCardIndex + 1) % cardNames.length;
 }
 

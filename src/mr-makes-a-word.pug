@@ -1,11 +1,13 @@
 include aspect-ratio-img
+include gif
+include picture
 
 .mr-grid
     .mr-title.section-title Mr. Makes-A-Word
 
     .mr-subtitle.section-subtitle
         a(href='https://apps.apple.com/us/app/mr-makes-a-word/id1496556261')
-            img(src='assets/images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' alt='')
+            img(src='assets/shared/AppStoreDownloadBadge.svg' alt='')
     .mr-description.section-description
         | Mr. Makes-A-Word is a fun and colorful word game for iOS. In addition to 13 cooky characters to unlock, the game features over 100 levels that increase in difficulty with the player&rsquo;s skill.
     .mr-trailer
@@ -15,15 +17,17 @@ include aspect-ratio-img
                 | Sorry, your browser doesn&apos;t support embedded videos.
 
     .mr-cards
-        img(src='./assets/images/mr/cards/bobmeat.png' id='mr-cards-img')
+        img(src='./assets/mr-makes/cards/bobmeat.png' id='mr-cards-img')
     .mr-cereal
-        img(src='./assets/images/mr/gif/cereal.gif')
+        +gif('./assets/mr-makes/cereal')
     .mr-gift
-        img(src='./assets/images/mr/gif/gift.gif')
+        +gif('./assets/mr-makes/gift')
     .mr-milk-bag
-        img(src='./assets/images/mr/gif/milkbag.gif')
+        +gif('./assets/mr-makes/milkbag')
     .mr-tiles-gif
-        img(src='./assets/images/mr/gif/tiles-gif.gif')
+        +gif('./assets/mr-makes/tiles-gif')
+
+        //- img(src='./assets/mr-makes/tiles-gif.webm')
     .mr-sticker-lg.allow-overflow#sticker-lg-container
         -var index = 0
         each val in largeStickerConfigs
@@ -58,9 +62,9 @@ include aspect-ratio-img
             )
             - index++
     .mr-powerups-1
-        img(src='./assets/images/mr/powerups.png')
+        +picture('./assets/mr-makes/powerups', 'powerups')
     .mr-powerups-2
-        img(src='./assets/images/mr/icons.png')
+        +picture('./assets/mr-makes/icons', 'icons')
     .mr-lemoon-bg
     .mr-lemoon
-        img(src='./assets/images/mr/lemoon.png')
+        +picture('./assets/mr-makes/lemoon', 'lemoon')
