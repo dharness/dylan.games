@@ -1,4 +1,8 @@
 include aspect-ratio-img
+include gif
+include picture
+
+
 .hm-grid
     .hm-title.section-title Handyman
 
@@ -9,19 +13,16 @@ include aspect-ratio-img
         | shadow puppets and much more! Just remember to wipe off your fingerprints. Coming to Steam in 2021.
 
     .hm-titlescreen
-        img(src="assets/handyman/titlescreen2.png" alt='')
+        +picture('assets/handyman/titlescreen2')
     .hm-box
-        img(src="assets/handyman/handyman-box.gif" alt='')
+        +gif('assets/handyman/handyman-box')
     .hm-garbage
-        img(src="assets/handyman/handyman-mushroom.gif" alt='')
+        +gif('assets/handyman/handyman-mushroom')
     .hm-ik
-        img(src="assets/handyman/handyman-ik.gif" alt='')
+        +gif('assets/handyman/handyman-ik')
     .hm-gh-blurb-wrapper
         .hm-gh-blurb
             a.hm-gh-link(href="https://github.com/dharness/CurveIK" target="_blank")
                 img(src="assets/handyman/gh-button.png")
-            //- button.hm-gh-blurb-button
-            //-     img(src="assets/images/GitHub-Mark-120px-plus.png")
-            //-     div View on Github
             .hm-gh-blurb-text
                 | CurveIK is an IK plugin for Unreal Engine 4 written in C++. Check it out on Github!
