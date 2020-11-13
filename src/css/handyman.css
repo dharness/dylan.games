@@ -31,7 +31,7 @@
     grid-row: 1/5;
     display: flex;
 
-    img {
+    video, img {
         width: 100%;
         margin-top: auto;
         border-radius: var(--hm-border-radius);
@@ -41,7 +41,7 @@
 .hm-box {
     grid-column: 5/9;
     grid-row: 5/8;
-    img {
+    video, img {
         border-radius: var(--hm-border-radius);
         height: 100%;
         display: block;
@@ -52,7 +52,7 @@
 .hm-garbage {
     grid-column: 9/13;
     grid-row: 5/8;
-    img {
+    video, img {
         border-radius: var(--hm-border-radius);
         height: 100%;
         display: block;
@@ -65,7 +65,7 @@
     grid-row: 5/8;
     background: var(--hm-gh-color);
     border-radius: var(--hm-border-radius);
-    img {
+    video, img {
         height: 127%;
         margin: auto;
         display: block;
@@ -143,10 +143,10 @@
         padding-top: 0px;
     }
     
-    .hm-titlescreen img, 
-    .hm-box img,
-    .hm-garbage img,
-    .hm-ik img {
+    .hm-titlescreen img, .hm-titlescreen video, 
+    .hm-box img, .hm-box video,
+    .hm-garbage img, .hm-garbage video,
+    .hm-ik img, .hm-ik video {
         width: 100%;
         height: unset;
     }
