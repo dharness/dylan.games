@@ -129,6 +129,7 @@ svg {
     grid-column: 4/6;
     grid-row: 6/8;
     overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -427,7 +428,7 @@ svg {
         grid-row: 111/116;
         display: unset;
         picture, img {
-            width: 80%;
+            width: 90%;
             height: unset;
             display: block;
             margin: -5vw auto auto auto;
