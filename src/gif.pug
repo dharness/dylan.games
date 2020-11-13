@@ -4,4 +4,4 @@ mixin gif(base_path, fallback=false)
         source(src=base_path + '.mp4' type='video/mp4')
 
     if fallback
-        img(src=base_path + '.gif' class='gif-fallback__gif' id='gif_' + base_path)
+        img(src=base_path + '.gif' class='gif-fallback__gif' id='gif_' + base_path style="display: none")

@@ -6,7 +6,7 @@ if (isSafari) {
     gifsForFallback.forEach(g => {
         var video = document.getElementById(g.id + '__video');
         video.style.display = 'none';
-        g.style.display = 'unset';
+        g.style.removeProperty('display');
     });
 }
 
