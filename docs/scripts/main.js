@@ -47,6 +47,8 @@ const stickerLgBg = document.querySelector('#sticker-lg-container');
 const stickerSm1Bg = document.querySelector('#sticker-sm1-container');
 const stickerSm2Bg = document.querySelector('#sticker-sm2-container');
 const card = document.querySelector('#mr-cards-img');
+const cardWebp = document.querySelector('#mr-cards-webp');
+const cardPng = document.querySelector('#mr-cards-png');
 const stickerLists = getStickerLists();
 let currentStickerIndices = { lg: 0, sm1: 0, sm2: 0 };
 const cardNames = ['7friends','doris', 'insects', 'mark', 'wanda', 'bobmeat', 'fish', 'leap', 'mosquitos', 'box', 'ganghis', 'madame', 'toungue'];
@@ -57,7 +59,7 @@ function nextSticker(prefix) {
     prevStickerEl.style.display = 'none';
     currentStickerIndices[prefix] = (1 + currentStickerIndices[prefix]) % stickerLists[prefix].length;
     const currentStickerEl = stickerLists[prefix][currentStickerIndices[prefix]];
-    currentStickerEl.style.display = 'unset';
+    currentStickerEl.style.display = 'block';
     let bgEl = stickerLgBg;
     if (prefix == 'sm1') { bgEl = stickerSm1Bg; }
     else if (prefix == 'sm2') { bgEl = stickerSm2Bg; }
@@ -66,7 +68,9 @@ function nextSticker(prefix) {
 }
 
 function nextCard() {
-    card.src = `./assets/images/mr/cards/${cardNames[currentCardIndex]}.png`
+    card.src = `./assets/mr-makes/cards/${cardNames[currentCardIndex]}.png`;
+    cardWebp.srcset = `./assets/mr-makes/cards/${cardNames[currentCardIndex]}.webp`;
+    cardPng.srcset = `./assets/mr-makes/cards/${cardNames[currentCardIndex]}.png`;
     currentCardIndex = (currentCardIndex + 1) % cardNames.length;
 }
 

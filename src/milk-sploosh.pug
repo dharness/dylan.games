@@ -1,2 +1,7 @@
+include picture
+
 .mr-milk
-    img#sploosh(src='./assets/images/mr/Aploosh.png' alt='')
+    picture
+        source(srcset='./assets/mr-makes/Aploosh' + '.webp' type='image/webp')
+        source(srcset='./assets/mr-makes/Aploosh' + '.png' type='image/png')
+        img#sploosh(src='./assets/mr-makes/Aploosh' + '.png' alt=alt_text)

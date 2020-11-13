@@ -17,6 +17,29 @@ body {
     src: url('../assets/fonts/BAHNSCHRIFT.woff') format('woff');
 }
 
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-MediumItalic.ttf') format('truetype'),
+    url('../assets/fonts/Montserrat-MediumItalic.woff') format('woff');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype'),
+    url('../assets/fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Antique Olive Bold';
+    src: url('../assets/fonts/AntiqueOliveBold.ttf') format('truetype'),
+    url('../assets/fonts/AntiqueOliveBold.woff') format('woff');
+    font-weight: bold;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;

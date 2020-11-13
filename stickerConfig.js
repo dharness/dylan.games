@@ -29,7 +29,6 @@ const largeStickerConfigs = [
         name: 'mark_spaghetti',
         width: '115%',
         color: '#ffd1d1'
-
     },
     {
         name: 'box_bunny',
