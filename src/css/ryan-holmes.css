@@ -157,6 +157,11 @@
 }
 
 
+@media (min-width: 1200px) {
+    .rh-layout {
+        max-width: calc(54vw + 220px);
+    }
+}
 /* ----------------------------------------- */
 
 @media (max-width: 767px) {

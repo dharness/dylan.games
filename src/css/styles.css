@@ -52,11 +52,11 @@ body {
 }
 
 .section-title {
-    font-size: 6vw;
-    font-family: 'Good Unicorn';
+    font-size: 4vw;
+    font-family: 'Montserrat';
     display: flex;
     @media (max-width: 767px) {
-        font-size: 14.7vw;
+        font-size: 8.7vw;
     }
 }
 

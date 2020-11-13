@@ -1,6 +1,6 @@
 .dh-intro-wrapper {
     width: calc(60vw + 11*20px);
-    margin: 3vw auto 2vw auto;
+    margin: 3vw auto 8vw auto;
     display: flex;
 }
 
@@ -42,14 +42,38 @@
     color: #3089D6;
 }
 
+@media (min-width: 1200px) {
+    .dh-intro-wrapper {
+        width: calc(54vw + 11*20px);
+    }
+}
+
 @media (max-width: 767px) {
     .dh-intro-wrapper {
         flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
+
+    .dh-name {
+        width: 90%;
+    }
+
+    .dh-intro-wrapper > picture {
+        width: 40%;
+        margin-bottom: -9%;
+    }
+    
     .dh-balloon-img, .dh-text {
         align-self: center;
     }
     .dh-text {
         align-items: center;
+        font-size: 12px;
+        padding-bottom: 76px;
+        line-height: 1.5;
+        margin-left: 0%;
+        max-width: 80%;
     }
 }
