@@ -146,6 +146,11 @@
         line-height: 0.7;
     }
 
+    .hm-grid > div {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+
     .hm-title {
         align-self: self-start;
     }
