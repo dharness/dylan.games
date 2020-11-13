@@ -6,8 +6,8 @@
 .hm-grid {
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(12, 5.0vw);
-    grid-template-rows: repeat(10, 5.0vw);
+    grid-template-columns: repeat(12, 4.0vw);
+    grid-template-rows: repeat(10, 4.0vw);
     column-gap: 20px;
     row-gap: 20px;
 }
