@@ -4,8 +4,12 @@
     display: flex;
 }
 
-.dh-balloon-img {
+.dh-intro-wrapper > picture {
     width: 15%;
+}
+
+.dh-balloon-img {
+    width: 100%;
 }
 
 .dh-name {
