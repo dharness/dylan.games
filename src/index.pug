@@ -1,4 +1,5 @@
 include aspect-ratio-img
+include gif
 
 doctype html
 head
@@ -16,6 +17,7 @@ head
     link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png")
     link(rel="manifest" href="assets/favicon/site.webmanifest")
     link(rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5")
+
     meta(name="msapplication-TileColor" content="#da532c")
     meta(name="theme-color" content="#ffffff")
     title Dylan Harness
@@ -35,7 +37,7 @@ include milk-sploosh.pug
     include ryan-holmes.pug
 
 .rh-scene-wrapper
-    //- +aspect-ratio-img('rh-scene crisp','./assets/ryan-holmes/scene.png')
     img.rh-scene.crisp(src='./assets/ryan-holmes/scene.png' alt='')
 
 script(src="scripts/main.js")
+script(src="scripts/safari.js")

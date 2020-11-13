@@ -1,4 +1,7 @@
-mixin gif(base_path)
-    video(autoplay='' loop='' muted='' playsinline='')
+mixin gif(base_path, fallback=false)
+    video(autoplay loop muted playsinline class=fallback ? 'gif-fallback__video' : '' id='gif_' + base_path + '__video')
         source(src=base_path + '.webm' type='video/webm')
         source(src=base_path + '.mp4' type='video/mp4')
+
+    if fallback
+        img(src=base_path + '.gif' class='gif-fallback__gif' id='gif_' + base_path)

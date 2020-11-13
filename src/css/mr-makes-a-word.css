@@ -74,15 +74,19 @@ svg {
 }
 
 .mr-trailer-frame {
-    display: flex;
     border-radius: var(--mr-border-radius);
     overflow: hidden;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
     height: 100%;
     justify-content: center;
+    position: relative;
     iframe {
         width: 100%;
         height: 101%;
+    }
+    video {
+        position: absolute;
+        bottom: 0;
     }
 }
 
