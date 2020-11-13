@@ -17,25 +17,6 @@ body {
     src: url('../assets/fonts/BAHNSCHRIFT.woff') format('woff');
 }
 
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat-MediumItalic.ttf') format('truetype');
-    font-weight: lighter;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Antique Olive';
-    src: url('../assets/fonts/AntiqueOliveBold.ttf') format('truetype');
-    font-weight: bold;
-}
-
 .page-wrapper {
     display: flex;
     flex-direction: column;
@@ -48,8 +29,8 @@ body {
 }
 
 .section-title {
-    font-size: 4vw;
-    font-family: 'Antique Olive';
+    font-size: 6vw;
+    font-family: 'Good Unicorn';
     display: flex;
     @media (max-width: 767px) {
         font-size: 14.7vw;
@@ -65,7 +46,7 @@ body {
     font-family: 'Lucida Sans Unicode';
     font-size: 1vw;
     line-height: 1.8vw;
-    /* @media (max-width: 768px) {
+    @media (max-width: 768px) {
         font-size: 3.5vw;
         line-height: 4.9vw;
         position: unset;
@@ -73,7 +54,7 @@ body {
     @media (min-width: 768px) and (max-width: 1281px) {
         font-size: 1.4vw;
         line-height: 2.3vw;
-    } */
+    }
 }
 
 .allow-overflow {
@@ -90,7 +71,7 @@ body {
         font-size: 4.8vw;
     }
     .section-description {
-        font-size: 3.8vw;
+        font-size: 3.3vw;
         line-height: 6vw;
     }
 }

@@ -50,7 +50,7 @@ svg {
         width: 14%;
     }
     img {
-        width: 140%;
+        width: 100%;
     }
     @media (max-width: 768px) {
         a {
@@ -62,16 +62,6 @@ svg {
 .mr-description {
     grid-column: 1/9;
     grid-row: 3/4;
-    @media (max-width: 768px) {
-        font-size: 3.5vw;
-        line-height: 4.9vw;
-        position: unset;
-    }
-    @media (min-width: 768px) and (max-width: 1281px) {
-        font-size: 1.4vw;
-        line-height: 2.3vw;
-    }
-    
 }
 
 
@@ -119,8 +109,12 @@ svg {
     border-radius: var(--mr-border-radius);
     grid-column: 4/6;
     grid-row: 4/6;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-        width: 100%;
+        width: 130%;
     }
 }
 
@@ -134,7 +128,7 @@ svg {
     justify-content: center;
     align-items: center;
     img {
-        width: 132%;
+        width: 120%;
     }
 }
 
