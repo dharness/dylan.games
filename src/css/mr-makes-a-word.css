@@ -152,6 +152,10 @@ svg {
     justify-content: center;
     align-items: center;
     animation-duration: 10.5s;
+    img {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .mr-sticker-lg-scale {
@@ -220,6 +224,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    img { margin: auto; }
 }
 
 .mr-sticker-sm-2 {
@@ -230,6 +235,7 @@ svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    img { margin: auto; }
 }
 
 .mr-milk-bag {
