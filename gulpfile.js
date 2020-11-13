@@ -11,6 +11,7 @@ const pugPath = './src/**/*.pug';
 const cssPath = './src/**/*.css';
 const jsPath = './src/**/*.js';
 const assetsPath = './src/assets/**/**';
+const cnamePath = './src/CNAME';
 
 const { largeStickerConfigs, smallStickerConfigs1, smallStickerConfigs2 } = require('./stickerConfig');
 
@@ -39,11 +40,16 @@ function assets() {
         .pipe(dest('docs/assets'));
 };
 
+function cname() {
+    return src(cnamePath)
+        .pipe(dest('docs'));
+};
+
 function clean() {
     return del(['docs']);
 };
 
-const runTasks = series(clean, parallel(html, css, assets, js));
+const runTasks = series(clean, parallel(html, css, assets, js, cname));
 
 exports.default = function(done) {
     runTasks();
