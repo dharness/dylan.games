@@ -16,7 +16,7 @@
     width: 45%;
 }
 
-.dh-headline, .dh-email, .dh-website {
+.dh-headline, .dh-email, .dh-website, .dh-resume {
     font-family: 'Montserrat';
     font-weight: bold;
     display: inline-block;
@@ -38,8 +38,9 @@
     padding-bottom: 1%;
 }
 
-.dh-website {
+.dh-website, .dh-resume {
     color: #3089D6;
+    padding-bottom: 5px;
 }
 
 @media (min-width: 1200px) {
