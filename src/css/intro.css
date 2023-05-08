@@ -13,7 +13,10 @@
 }
 
 .dh-name {
-    width: 45%;
+    font-size: 4vw;
+    font-family: Montserrat;
+    display: flex;
+    margin-bottom: 10px;
 }
 
 .dh-headline, .dh-email, .dh-website, .dh-resume {
@@ -26,6 +29,10 @@
     margin-left: 3%;
     display: flex;
     flex-direction: column;
+}
+
+.dh-links {
+    display: flex;
 }
 
 .dh-headline {
@@ -41,6 +48,7 @@
 .dh-website, .dh-resume {
     color: #3089D6;
     padding-bottom: 5px;
+    margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
